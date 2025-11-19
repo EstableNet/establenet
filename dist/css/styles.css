@@ -10927,6 +10927,7 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #212529;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11208,11 +11209,17 @@ header.masthead .masthead-heading {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
+  
 }
 @media (min-width: 992px) {
-  .timeline > li {
-    min-height: 150px;
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
+  
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
