@@ -11336,12 +11336,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /* Forzar fondo gris al hacer scroll */
 #mainNav.navbar-shrink {
-    background-color: #f2f2f2 !important;
+    background-color: #212529 !important;
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
 }
 
 /* Opcional: fondo gris apenas carga (si quieres siempre gris) */
 #mainNav {
-    background-color: #f2f2f2;
+    background-color: #212529;
 }
