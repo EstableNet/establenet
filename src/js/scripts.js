@@ -24,6 +24,19 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
+    // Navbar background color change on scroll
+var navbarColor = function () {
+    const navbar = document.querySelector('#mainNav');
+    if (!navbar) return;
+
+    if (window.scrollY > 10) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
+};
+
+
     //  Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
@@ -43,6 +56,9 @@ window.addEventListener('DOMContentLoaded', event => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
+
+            document.addEventListener('scroll', navbarColor);
+
         });
     });
 
